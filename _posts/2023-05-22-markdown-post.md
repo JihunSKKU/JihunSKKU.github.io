@@ -1,10 +1,10 @@
 ---
 title: "Markdown 문법"
-excerpt: "여러가지 Markdown 문법에 대해 공부한 내용"
-toc: true
-toc_sticky: true
-header:
-  teaser: /assets/images/notebook.jpg
+excerpt: "여러가지 Markdown 문법에 대해 공부한 내용이다."
+# toc: true
+# toc_sticky: true
+# header:
+#   teaser: /assets/images/notebook.jpg
 
 categories:
   - Blog
