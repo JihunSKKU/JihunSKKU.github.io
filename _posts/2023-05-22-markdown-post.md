@@ -1,10 +1,11 @@
 ---
 title: "Markdown 문법"
+date: 2023-05-22
 excerpt: "여러가지 Markdown 문법에 대해 공부한 내용이다."
-# toc: true
-# toc_sticky: true
-# header:
-#   teaser: /assets/images/notebook.jpg
+toc: true
+toc_sticky: true
+header:
+  teaser: /assets/images/notebook.jpg
 
 categories:
   - Blog
@@ -12,6 +13,8 @@ tags:
   - Blog
 last_modified_at: 2023-05-22
 ---
+
+<br>
 
 ## 1. 텍스트 줄바꿈
 
