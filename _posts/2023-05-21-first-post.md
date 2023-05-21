@@ -3,10 +3,10 @@ title: "github.io 블로그 시작하기"
 excerpt: "GitHub Blog 서비스인 github.io 블로그를 시작해보았다."
 
 categories:
-    - Blog
+  - Blog
 tags:
-    - Blog
-last_modified_at: 2023-05-21 16:32
+  - Blog
+last_modified_at: 2023-05-21
 ---
 
 GitHub Blog 서비스인 github.io 블로그를 시작해보기로 하였다.
