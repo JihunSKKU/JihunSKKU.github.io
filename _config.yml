@@ -24,7 +24,7 @@ description: "공부 기록 블로그"
 url: "https://JihunSKKU.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser: "/assets/images/증명사진.jpg"
+teaser: "/assets/images/notebook.jpg"
 logo: "/assets/images/notebook.jpg"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -277,7 +277,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
+      show_date: true
       comments: # 블로그 댓글 기능 true
       share: true
       related: true
