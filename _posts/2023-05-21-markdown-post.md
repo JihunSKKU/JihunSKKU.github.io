@@ -14,8 +14,6 @@ tags:
 last_modified_at: 2023-05-21
 ---
 
-아래는 여러 markdown의 예시들이다.
-
 ## 1. 텍스트 줄바꿈
 
 <br>
