@@ -1,6 +1,6 @@
 ---
 title: "Markdown 문법"
-date: 2023-05-22
+date: 2023-05-21
 excerpt: "여러가지 Markdown 문법에 대해 공부한 내용이다."
 toc: true
 toc_sticky: true
@@ -11,12 +11,12 @@ categories:
   - Blog
 tags:
   - Blog
-last_modified_at: 2023-05-22
+last_modified_at: 2023-05-21
 ---
 
 아래는 여러 markdown의 예시들이다.
 
-<!-- ## 1. 텍스트 줄바꿈
+## 1. 텍스트 줄바꿈
 
 <br>
 기본적인 텍스트 표기 방식이다.
@@ -464,4 +464,4 @@ print s
 
 ### 출처
 
-<https://devinlife.com/howto%20github%20pages/markdown-syntax/> -->
+<https://devinlife.com/howto%20github%20pages/markdown-syntax/>
