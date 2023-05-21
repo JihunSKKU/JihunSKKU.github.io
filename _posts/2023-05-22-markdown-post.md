@@ -14,8 +14,6 @@ tags:
 last_modified_at: 2023-05-22
 ---
 
-<br>
-
 ## 1. 텍스트 줄바꿈
 
 <br>
