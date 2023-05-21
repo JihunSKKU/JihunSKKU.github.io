@@ -1,6 +1,12 @@
 # main links
 main:
-  - title: "블로그 방문하기"
-    url: https://JihunSKKU.github.io
-  - title: "About"
-    url: /about/
+  # - title: "블로그 방문하기"
+  #   url: https://JihunSKKU.github.io
+  - title: "Blog"
+    url: /categories/Blog
+  - title: "Categories"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/
+  - title: "Reference"
+    url: /reference/
