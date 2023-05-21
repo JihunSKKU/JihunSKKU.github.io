@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale: "en-US"
@@ -25,7 +25,7 @@ url: "https://JihunSKKU.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: "/assets/images/증명사진.jpg"
-logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo: "/assets/images/notebook.jpg"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute: 200
@@ -38,10 +38,10 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid:
-    num_posts: # 5 (default)
-    colorscheme: "dark"
+    num_posts: 5
+    colorscheme: # "dark"
   utterances:
-    theme: "github-dark"
+    theme: # "github-dark"
     issue_term: # "pathname" (default)
   giscus:
     repo_id: # Shown during giscus setup at https://giscus.app
@@ -86,7 +86,8 @@ facebook:
   username:
   app_id:
   publisher:
-og_image: # Open Graph/Twitter default site image
+og_image: "/assets/images/notebook.jpg"
+# Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -107,11 +108,11 @@ author:
   avatar: "/assets/images/증명사진.jpg"
   bio: "옾소실 과제 어려워요 ㅠㅠ"
   location: "South Korea"
-  email:
+  email: "kjh31021@g.skku.edu"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "kjh31021@g.skku.edu"
+      # url: "kjh31021@g.skku.edu"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -123,7 +124,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/JihunSKKU"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -139,7 +140,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com.JihunSKKU"
+      url: "https://github.com/JihunSKKU"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -214,7 +215,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: #Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: #KR #Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins (previously gems:)
 plugins:
