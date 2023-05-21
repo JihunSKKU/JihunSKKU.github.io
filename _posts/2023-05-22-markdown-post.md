@@ -2,6 +2,10 @@
 title: "Markdown 문법"
 date: 2023-05-22
 excerpt: "여러가지 Markdown 문법에 대해 공부한 내용이다."
+toc: true
+toc_sticky: true
+header:
+  teaser: /assets/images/notebook.jpg
 
 categories:
   - Blog
@@ -12,7 +16,7 @@ last_modified_at: 2023-05-22
 
 아래는 여러 markdown의 예시들이다.
 
-## 1. 텍스트 줄바꿈
+<!-- ## 1. 텍스트 줄바꿈
 
 <br>
 기본적인 텍스트 표기 방식이다.
@@ -55,7 +59,7 @@ _single asterisks_ or _single underscore_
 ### 2.3. Cancelline
 
 <pre>
-< s >strike tag< /s > or < del >delete tag< /del > or ~~double tilde~~ 
+< s >strike tag< /s > or < del >delete tag< /del > or ~~double tilde~~
 + '< >'에 있는 띄어쓰기는 붙여야 한다 (표기상의 문제로 띄워두었음)
 </pre>
 
@@ -460,4 +464,4 @@ print s
 
 ### 출처
 
-<https://devinlife.com/howto%20github%20pages/markdown-syntax/>
+<https://devinlife.com/howto%20github%20pages/markdown-syntax/> -->
