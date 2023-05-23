@@ -4,6 +4,6 @@ permalink: /reference/
 layout: single
 ---
 
-<https://devinlife.com>
+<https://devinlife.com/howto/>
 
-이 곳에서 GitHub Pages 블로그 따라하기 시리즈의 모든 글을 볼 수 있다.
+위 주소에서 github.io 블로그를 만드는 데에 큰 도움을 받았습니다.
