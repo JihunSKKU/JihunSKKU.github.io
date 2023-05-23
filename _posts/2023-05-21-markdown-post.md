@@ -125,11 +125,11 @@ _single asterisks_ or _single underscore_
   - 라면
     - 사탕
 
-<pre>
-- 과자
-    - 라면
-        -사탕
-</pre>
+<br>
+
+    - 과자
+        - 라면
+            -사탕
 
 - 과자
   - 라면
