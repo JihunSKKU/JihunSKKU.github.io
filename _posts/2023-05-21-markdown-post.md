@@ -10,7 +10,7 @@ header:
 categories:
   - Github.io
 tags:
-  - Gihub.io
+  - Github.io
   - Markdown
 last_modified_at: 2023-05-23
 ---
