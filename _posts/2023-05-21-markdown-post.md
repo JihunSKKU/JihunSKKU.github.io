@@ -8,9 +8,10 @@ header:
   teaser: /assets/images/notebook.jpg
 
 categories:
-  - Blog
+  - Github.io
 tags:
-  - Blog
+  - Gihub.io
+  - Markdown
 last_modified_at: 2023-05-23
 ---
 
