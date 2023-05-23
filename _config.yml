@@ -20,7 +20,7 @@ title: "Jihun Kim Blog"
 title_separator: "-"
 subtitle: # site tagline that appears below site title in masthead
 name: "Jihun Kim"
-description: "공부 기록 블로그"
+description: "기록 블로그"
 url: "https://JihunSKKU.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -106,7 +106,7 @@ analytics:
 author:
   name: "Jihun Kim"
   avatar: "/assets/images/증명사진.jpg"
-  bio: "옾소실 과제 어려워요 ㅠㅠ"
+  bio: "Mathematics & Software major"
   location: "South Korea"
   email: "kjh31021@g.skku.edu"
   links:
