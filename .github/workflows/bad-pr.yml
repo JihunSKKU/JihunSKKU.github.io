@@ -2,16 +2,20 @@ name: Cleanup bad PR
 
 on:
   pull_request_target:
-    types: [opened, reopened]
+    types: [opened, reopened] # pull_request가 open되거나 reopen될 때 action 실행
 
 jobs:
   close-pr:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # ubuntu-latest 환경에서 action이 실행된다
+    # 아래 조건을 만족할 때에만 action을 실행한다
     if: "contains(github.event.pull_request.body, 'by deleting this comment block') || github.event.pull_request.body == ''"
     steps:
+      # 라벨을 추가하는 action
       - uses: actions-ecosystem/action-add-labels@v1
         with:
-          labels: 'Type: Invalid'
+          labels: "Type: Invalid" # 추가할 라벨의 이름
+
+      # pull_request를 닫는 action
       - uses: superbrothers/close-pull-request@v3
         with:
           # Optional. Post an issue comment just before closing a pull request.
@@ -20,8 +24,10 @@ jobs:
 
               [1]: https://mmistakes.github.io/minimal-mistakes/
               [2]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests
+
+      # pull_request를 잠그는 action
       - uses: sudo-bot/action-pull-request-lock@v1.0.5
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          number: ${{ github.event.pull_request.number }}
-          lock-reason: spam
+          github-token: ${{ secrets.GITHUB_TOKEN }} # GitHub token
+          number: ${{ github.event.pull_request.number }} # pull_request number
+          lock-reason: spam # pull_request를 잠그는 이유
