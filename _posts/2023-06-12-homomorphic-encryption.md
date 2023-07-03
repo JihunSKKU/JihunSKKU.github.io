@@ -18,17 +18,17 @@ last_modified_at: 2023-07-03
 
 ## Homomorphic Encryption 종류
 
-1. 부분적 동형암호 (Partial Homomorphic Encryption, PHE)
+### 1. 부분적 동형암호 (Partial Homomorphic Encryption, PHE)
 
 오직 한 유형의 연산만 지원한다.
 
-2. 준 동형암호 (Somewhat Homomorphic Encryption, SHE)
+### 2. 준 동형암호 (Somewhat Homomorphic Encryption, SHE)
 
 암호문에 난수화된 에러를 포함하는 것으로써, 다수의 연산후에는 에러가 증폭되어 그 크기가 일정 수준을 넘어서면 정확한 복호화가 불가능한 한계가 있다.
 
 덧셈과 곱셈 모두 지원하며 몇 번의 연산에도 값 보존 처리를 한다.
 
-3. 완전 동형암호 (Fully Homomorphic Encryption, FHE)
+### 3. 완전 동형암호 (Fully Homomorphic Encryption, FHE)
 
 Gentry는 SHE에 재부팅(bootstrapping)이라는 과정을 통해 대수연산(Addition, Multiplication)이 이론산 무한번 가능하게 만들었으며, 이를 FHE라 부른다.
 
@@ -38,11 +38,11 @@ Gentry는 SHE에 재부팅(bootstrapping)이라는 과정을 통해 대수연산
 
 ## Homomorphic Encryption 분류
 
-1. 1세대
+### 1. 1세대
 
 2009년 Gentry에 의해 처음 제안된 동형암호를 1세대로 구분한다.
 
-2. 2세대
+### 2. 2세대
 
 2011년 Brakerski-Gentry-Vaikuntanathan에 의해 발표된 논문에서는, 곱셈시 생기는 잡음의 크기를 줄이는 기법이 제안되어, 재부팅없이 가능한 곱셈 횟수를 암호문 길이에 대해 기하급수적으로 늘릴 수 있게 되었다. 소위 모듈러스, 혹은 키 교환(modulus/key-switching) 이라 부르는 과정이며 이러한 과정을 도입한 스킴들을 2세대 동형암호라 부른다.
 
@@ -54,11 +54,11 @@ Gentry는 SHE에 재부팅(bootstrapping)이라는 과정을 통해 대수연산
 
 - The NTRU-based scheme by Bos, Lauter, Loftus, and Naehrig (BLLN, 2013),\[[7](https://eprint.iacr.org/2013/075)\] (LTV 스킴과 Brakerski의 스케일보존 암호시스템에 기반한 설계);\[[6](https://eprint.iacr.org/2012/078)\]
 
-3. 3세대
+### 3. 3세대
 
 2013년 Gentry-Sahai-Water 에 의해 발표된 논문에서는 이 곱셈과정의 잡음을 한층 더 줄이고 동형곱셈시 비용이 많이 드는 재선형화(relinearization) 과정을 없애는 기술을 소개하였다. 이를 활용하는 동형암호를 3세대 동형암호라고 부르는데, 특히 평문을 1 비트로 제한하는 대신 매우 빠른 재부팅을 가능하게 한 Ducas-Micciancio14의 FHEW스킴과 Chillotti-Gama-Georgieva-Izabachene16의 TFHE스킴이 이에 속한다.
 
-4. 4세대
+### 4. 4세대
 
 2016년 Cheon-Kim-Kim-Song\[[8](https://link.springer.com/chapter/10.1007/978-3-319-70694-8_15)\] 은 덧셈과 곱셈 외에 반올림이라는 세 번째 연산이 암호화상태에서 가능한 혜안(HEaaN)이라는 동형암호를 발표하였다. HEAAN의 최초 버전은 깃허브에 2016년 5월 15일 공개되었으며\[[9](https://github.com/snucrypto/HEAAN)\] 나중에 부트스트래핑 알고리즘을 갖춘 HEAAN 신버전이 출시되었다.\[[10](https://eprint.iacr.org/2018/153)\] 현재 최신 버전은 버전 2.1이다.
 
