@@ -68,4 +68,5 @@ Gentry는 SHE에 재부팅(bootstrapping)이라는 과정을 통해 대수연산
 10. Jung Hee Cheon, Kyoohyung Han, Andrey Kim, Miran Kim and Yongsoo Song. [Bootstrapping for Approximate Homomorphic Encryption](https://eprint.iacr.org/2018/153). In EUROCRYPT 2018(springer).
 
 [참고자료 1](https://koreascience.kr/article/JAKO201326952133126.pdf)
+
 [RSA 암호](https://ko.wikipedia.org/wiki/RSA_%EC%95%94%ED%98%B8)
