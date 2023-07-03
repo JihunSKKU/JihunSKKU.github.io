@@ -18,13 +18,23 @@ last_modified_at: 2023-07-03
 
 ## Homomorphic Encryption 종류
 
-1. 유한동형암호 (Somewhat Homomorphic Encryption, SHE)
+1. 부분적 동형암호 (Partial Homomorphic Encryption, PHE)
+
+오직 한 유형의 연산만 지원한다.
+
+2. 준 동형암호 (Somewhat Homomorphic Encryption, SHE)
 
 암호문에 난수화된 에러를 포함하는 것으로써, 다수의 연산후에는 에러가 증폭되어 그 크기가 일정 수준을 넘어서면 정확한 복호화가 불가능한 한계가 있다.
 
-2. 완전동형암호 (Fully Homomorphic Encryption, FHE)
+덧셈과 곱셈 모두 지원하며 몇 번의 연산에도 값 보존 처리를 한다.
+
+3. 완전 동형암호 (Fully Homomorphic Encryption, FHE)
 
 Gentry는 SHE에 재부팅(bootstrapping)이라는 과정을 통해 대수연산(Addition, Multiplication)이 이론산 무한번 가능하게 만들었으며, 이를 FHE라 부른다.
+
+- Bootstrapping : 암호화된 비밀키를 이용하여 노이즈가 감소된 새로운 암호문 생성 후 연산 수행하는 설계 원리
+
+- Squashing : 노이즈 증가 감소, 평문 변형되지 않도록 구성하는 원리 / 복호화 알고리즘 및 공개키 일부 변형
 
 ## Homomorphic Encryption 분류
 
