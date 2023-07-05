@@ -14,7 +14,9 @@ tags:
 last_modified_at: 2023-07-05
 ---
 
-# Go란 무엇인가?
+# Go Language
+
+## Go란 무엇인가?
 
 Go는 구글에서 발명된 언어로 컴파일 언어라는 특징을 가지고 있다. 그래서 컴파일러의 컴파일 속도가 매우 빨라 인터프리터 언어처럼 사용할 수 있다.
 
@@ -37,7 +39,7 @@ Go는 구글에서 발명된 언어로 컴파일 언어라는 특징을 가지�
 
 - Interpret : Runtime 이후 Row 단위로 해석해 프로그램을 구동시키는 방식 -> 에러가 발견되면 즉시 중단 후 에러 보고
 
-# Go Start
+## Go Start
 
 ### hello.go
 
@@ -52,12 +54,12 @@ func main() {
 
 위 프로그램을 실행파일로 만들기 위해서는 다음과 같은 명령어를 터미널에 입력한다.
 
-```
+<pre style="background-color: #000; color: #fff; padding: 1rem; font-size: 14px;">
 go mod init example.com/hello
 go build .\hello.go
-```
+</pre>
 
-# Go Syntax
+## Go Syntax
 
 Go 파일은 아래와 같은 파트로 구분된다.
 
@@ -81,17 +83,16 @@ Go 파일은 아래와 같은 파트로 구분된다.
 4행 : **[Function]** 중괄호 안의 모든 코드가 실행된다.  
 5행 : **[Statements]** `fmt`패키지에서 사용할 수 있는 출력 기능이다.
 
-## Statement
+### Statement
 
 - Go에서 명령문(statement)는 Enter 또는 `';'`로 구분된다.
 - `'{'`는 줄의 시작 부분에 올 수 없다. (Error 뜸)
 
-# Go Comments -> C++과 동일
+## Go Comments -> C++과 동일
 
 한 줄 주석은 두 개의 슬래시 `'//'`로 시작한다.
 
-```Go
-// This is a comment
+```go
 package main
 import ("fmt")
 
@@ -103,7 +104,7 @@ func main() {
 
 여러 줄 주석은 `'/*'`로 시작해서 `'*/'`로 끝난다.
 
-```Go
+```go
 package main
 import ("fmt")
 
@@ -114,9 +115,9 @@ func main() {
 }
 ```
 
-# Go Variables
+## Go Variables
 
-## Data types
+### Data types
 
 | Data types       | 설명          | 특징                                                        |
 | :--------------- | :------------ | :---------------------------------------------------------- |
@@ -125,7 +126,7 @@ func main() {
 | string           | 문자열        | 문자열 값은 `"`로 묶어야 한다.                              |
 | bool             | True of False | 기본값은 `false`이다.                                       |
 
-```Go
+```go
 package main
 import ("fmt")
 
@@ -142,21 +143,21 @@ func main() {
 }
 ```
 
-## Declaring (Creating) Variables
+### Declaring (Creating) Variables
 
-1. With the `var` keyword
+- With the `var` keyword
 
 `var`키워드 다음에 변수 이름 및 유형을 선언
 
-```Go
+```go
 var variablename type = value
 ```
 
-2. With the `:=` sign
+- With the `:=` sign
 
 `:=`기호 다음에 변수 값 사용
 
-```Go
+```go
 variablename := value
 ```
 
@@ -164,7 +165,7 @@ variablename := value
 
 마찬가지로 `var`다음 변수 유형을 선언하지 않더라도 컴파일러가 변수의 유형을 결정한다.
 
-```Go
+```go
 package main
 import ("fmt")
 
@@ -179,11 +180,11 @@ func main() {
 }
 ```
 
-## Declare Multiple Variables
+### Declare Multiple Variables
 
 Go에서는 한 줄에 여러 변수를 선언할 수 있다.
 
-```Go
+```go
 package main
 import ("fmt")
 
@@ -199,7 +200,7 @@ func main() {
 
 변수 유형 `type`을 지정하지 않으면 같은 줄에서 여러 유형의 변수를 선언할 수 있다.
 
-```Go
+```go
 package main
 import ("fmt")
 
@@ -216,7 +217,7 @@ func main() {
 
 가독성을 위해 다음과 같이 하나의 블록으로 여러 변수 선언을 그룹화할 수도 있다.
 
-```Go
+```go
 package main
 import ("fmt")
 
@@ -233,7 +234,7 @@ func main() {
 }
 ```
 
-## Naming Rules
+### Naming Rules
 
 - 변수 이름은 문자 또는 underbar(`_`)로 시작해야 한다.
 - 변수 이름은 숫자로 시작할 수 없다.
@@ -242,11 +243,11 @@ func main() {
 - 변수 이름에 공백을 포함할 수 없다.
 - 변수 이름은 어떠한 Go keyword도 될 수 없다.
 
-# Go Constants
+## Go Constants
 
 변수가 변경할 수 없는 고정 값을 가져야 할 경우 `const`를 이용하여 변수를 "상수"로 선언한다. 이는 변수가 **변경 불가능하고 읽기 전용**임을 의미한다.
 
-```Go
+```go
 package main
 import ("fmt")
 
@@ -259,17 +260,17 @@ func main() {
 
 마찬가지로 유형이 지정되지 않은 상수는 컴파일러가 값을 기준으로 상수 유형을 결정한다.
 
-## Naming Rules
+### Naming Rules
 
 - 상수 이름은 변수와 동일한 규칙을 따른다.
 - 상수 이름은 일반적으로 대문자로 작성된다.
 - 상수는 함수 내부와 외부 모두에서 선언할 수 있다.
 
-# Go Output
+## Go Output
 
-## Print() Function
+### Print() Function
 
-```Go
+```go
 package main
 import ("fmt")
 
@@ -281,11 +282,13 @@ func main() {
 }
 ```
 
-> HelloWorld
+<pre style="background-color: #000; color: #fff; padding: 1rem; font-size: 14px;">
+HelloWorld
+</pre>
 
 줄바꿈을 하기 위해서는 `\n`을 사용해야 한다.
 
-```Go
+```go
 package main
 import ("fmt")
 
@@ -297,11 +300,14 @@ func main() {
 }
 ```
 
-> Hello<br>World<br>
+<pre style="background-color: #000; color: #fff; padding: 1rem; font-size: 14px;">
+Hello
+World
+</pre>
 
 여러 변수를 하나의 함수에서 print하는 것도 가능하다.
 
-```Go
+```go
 package main
 import ("fmt")
 
@@ -312,11 +318,14 @@ func main() {
 }
 ```
 
-> Hello<br>World<br>
+<pre style="background-color: #000; color: #fff; padding: 1rem; font-size: 14px;">
+Hello
+World
+</pre>
 
 **둘 다 문자열이 아닌** 경우 인수 사이에 공백을 삽입한다.
 
-```Go
+```go
 package main
 import ("fmt")
 
@@ -327,13 +336,15 @@ func main() {
 }
 ```
 
-> 10 20
+<pre style="background-color: #000; color: #fff; padding: 1rem; font-size: 14px;">
+10 20
+</pre>
 
-## Println() Function
+### Println() Function
 
 `Print()`함수와 달리 인수 사이에 공백이 추가되고 끝에 줄 바꿈이 추가된다.
 
-```Go
+```go
 package main
 import ("fmt")
 
@@ -344,13 +355,15 @@ func main() {
 }
 ```
 
-> Hello World
+<pre style="background-color: #000; color: #fff; padding: 1rem; font-size: 14px;">
+Hello World
+</pre>
 
-## Printf() Function
+### Printf() Function
 
 주어진 서식 동사를 기반으로 인수의 서식을 지정한 다음 print한다. (C++의 printf와 유사하다고 보면 된다.)
 
-### General Formatting Verbs
+#### General Formatting Verbs
 
 | Verb  | Description                                      |
 | :---- | :----------------------------------------------- |
@@ -359,7 +372,7 @@ func main() {
 | `%T`  | 인수의 **유형**을 출력하는 데 사용된다.          |
 | `%%`  | `%` sign을 출력한다.                             |
 
-```Go
+```go
 package main
 import ("fmt")
 
@@ -378,17 +391,28 @@ func main() {
 }
 ```
 
-> 15.5<br>
-> 15.5<br>
-> 15.5%<br>
-> float64<br>
-> Hello World!<br>
-> "Hello World!"<br>
-> string<br>
+<pre style="background-color: #000; color: #fff; padding: 1rem; font-size: 14px;">
+15.5
+15.5
+15.5%
+float64
+Hello World!
+"Hello World!"
+string
+</pre>
 
-### Integer Formatting Verbs
+#### Integer Formatting Verbs
 
-| Verb | Description |
-| :--- | :---------- |
-
-| %b
+| Verb | Description                                |
+| :--- | :----------------------------------------- |
+| %b   | Base 2                                     |
+| %d   | Base 10                                    |
+| %+d  | Base 10 and always show sign               |
+| %o   | Base 8                                     |
+| %O   | Base 8, with leading 0o                    |
+| %x   | Base 16, lowercase                         |
+| %X   | Base 16, uppercase                         |
+| %#x  | Base 16, with leading 0x                   |
+| %4d  | Pad with spaces (width 4, right justified) |
+| %-4d | Pad with spaces (width 4, left justified)  |
+| %04d | Pad with zeroes (width 4)                  |
