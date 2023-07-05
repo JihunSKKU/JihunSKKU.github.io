@@ -241,3 +241,90 @@ func main() {
 - 변수 이름은 대소문자를 구문한다.
 - 변수 이름에 공백을 포함할 수 없다.
 - 변수 이름은 어떠한 Go keyword도 될 수 없다.
+
+# Go Constants
+
+변수가 변경할 수 없는 고정 값을 가져야 할 경우 `const`를 이용하여 변수를 "상수"로 선언한다. 이는 변수가 **변경 불가능하고 읽기 전용**임을 의미한다.
+
+```Go
+package main
+import ("fmt")
+
+const PI = 3.14
+
+func main() {
+  fmt.Println(PI)
+}
+```
+
+마찬가지로 유형이 지정되지 않은 상수는 컴파일러가 값을 기준으로 상수 유형을 결정한다.
+
+## Naming Rules
+
+- 상수 이름은 변수와 동일한 규칙을 따른다.
+- 상수 이름은 일반적으로 대문자로 작성된다.
+- 상수는 함수 내부와 외부 모두에서 선언할 수 있다.
+
+# Go Output
+
+## Print() Function
+
+```Go
+package main
+import ("fmt")
+
+func main() {
+  var i,j string = "Hello","World"
+
+  fmt.Print(i)
+  fmt.Print(j)
+}
+```
+> HelloWorld
+
+줄바꿈을 하기 위해서는 `\n`을 사용해야 합니다.
+
+```Go
+package main
+import ("fmt")
+
+func main() {
+  var i,j string = "Hello","World"
+
+  fmt.Print(i, "\n")
+  fmt.Print(j, "\n")
+}
+```
+> Hello<br>World<br>
+
+여러 변수를 하나의 함수에서 print하는 것도 가능합니다.
+
+```Go
+package main
+import ("fmt")
+
+func main() {
+  var i,j string = "Hello","World"
+
+  fmt.Print(i, "\n",j)
+}
+```
+> Hello<br>World<br>
+
+**둘 다 문자열이 아닌** 경우 인수 사이에 공백을 삽입합니다.
+
+```Go
+package main
+import ("fmt")
+
+func main() {
+  var i,j = 10,20
+
+  fmt.Print(i,j)
+}
+```
+
+> 10 20
+
+
+
