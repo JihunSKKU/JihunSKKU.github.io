@@ -22,21 +22,20 @@ Go는 구글에서 발명된 언어로 컴파일 언어라는 특징을 가지�
 
 자료형 체계에 있어 정적 타입(static type) 검사가 이루어지기 때문에 Python과 조금 다르다. 문법은 C++과 유사하다.
 
-| Go | Python | C++ |
-| :---- | :---- | :---- |
-| Statically typed | Dynamically typed | Statically typed |
-| Fast run time | Slow run time | Fast run time |
-| Compiled | Interpreted | Compiled |
-| Fast compile time | Interpreted | Slow compile time |
-| Supports concurrency(동시성) | No support | Supports |
-| Has automatic garbage collection | Has | Does not have |
-| Does not support classes and objects | Has | Has |
-| Does not support inheritance(상속) | Supports | Supports |
+| Go                                   | Python            | C++               |
+| :----------------------------------- | :---------------- | :---------------- |
+| Statically typed                     | Dynamically typed | Statically typed  |
+| Fast run time                        | Slow run time     | Fast run time     |
+| Compiled                             | Interpreted       | Compiled          |
+| Fast compile time                    | Interpreted       | Slow compile time |
+| Supports concurrency(동시성)         | No support        | Supports          |
+| Has automatic garbage collection     | Has               | Does not have     |
+| Does not support classes and objects | Has               | Has               |
+| Does not support inheritance(상속)   | Supports          | Supports          |
 
 - Compiled : Runtime 전에 컴퓨터가 알아들을 수 있는 언어로 해석하는 방식 -> 실행시간이 더 빠름
 
 - Interpret : Runtime 이후 Row 단위로 해석해 프로그램을 구동시키는 방식 -> 에러가 발견되면 즉시 중단 후 에러 보고
-
 
 # Go Start
 
@@ -61,6 +60,7 @@ go build .\hello.go
 # Go Syntax
 
 Go 파일은 아래와 같은 파트로 구분된다.
+
 - Package declaration(선언)
 - Import package
 - Functions
@@ -79,7 +79,7 @@ Go 파일은 아래와 같은 파트로 구분된다.
 2행 : **[Import package]** `fmt`패키지에 포함된 파일들을 import한다.  
 3행 : **[White space]** Go는 공백을 무시한다. (가독성을 위해 추가)  
 4행 : **[Function]** 중괄호 안의 모든 코드가 실행된다.  
-5행 : **[Statements]** `fmt`패키지에서 사용할 수 있는 출력 기능이다.  
+5행 : **[Statements]** `fmt`패키지에서 사용할 수 있는 출력 기능이다.
 
 ## Statement
 
@@ -118,12 +118,12 @@ func main() {
 
 ## Data types
 
-| Data types | 설명 | 특징 |
-| :---- | :---- | :---- |
-| int | 정수 | 32 bit systems에서는 32 bit, 64 bit systems에서는 64 bit |
-| float32, float64 | 실수 | 32 bit : -3.4e+38 ~ 3.4e+38 / 64 bit : -1.7e+308 ~ 1.7e+308 |
-| string | 문자열 | 문자열 값은 `"`로 묶어야 한다. |
-| bool | True of False | 기본값은 `false`이다. |
+| Data types       | 설명          | 특징                                                        |
+| :--------------- | :------------ | :---------------------------------------------------------- |
+| int              | 정수          | 32 bit systems에서는 32 bit, 64 bit systems에서는 64 bit    |
+| float32, float64 | 실수          | 32 bit : -3.4e+38 ~ 3.4e+38 / 64 bit : -1.7e+308 ~ 1.7e+308 |
+| string           | 문자열        | 문자열 값은 `"`로 묶어야 한다.                              |
+| bool             | True of False | 기본값은 `false`이다.                                       |
 
 ```Go
 package main
@@ -280,6 +280,7 @@ func main() {
   fmt.Print(j)
 }
 ```
+
 > HelloWorld
 
 줄바꿈을 하기 위해서는 `\n`을 사용해야 한다.
@@ -295,6 +296,7 @@ func main() {
   fmt.Print(j, "\n")
 }
 ```
+
 > Hello<br>World<br>
 
 여러 변수를 하나의 함수에서 print하는 것도 가능하다.
@@ -309,6 +311,7 @@ func main() {
   fmt.Print(i, "\n",j)
 }
 ```
+
 > Hello<br>World<br>
 
 **둘 다 문자열이 아닌** 경우 인수 사이에 공백을 삽입한다.
@@ -325,7 +328,6 @@ func main() {
 ```
 
 > 10 20
-
 
 ## Println() Function
 
@@ -350,12 +352,12 @@ func main() {
 
 ### General Formatting Verbs
 
-| Verb | Description |
-| :---- | :---- |
-| `%v` | 인수의 **값**을 출력하는 데 사용된다. |
+| Verb  | Description                                      |
+| :---- | :----------------------------------------------- |
+| `%v`  | 인수의 **값**을 출력하는 데 사용된다.            |
 | `%#v` | 위와 동일, 그러나 Go-syntax format으로 출력된다. |
-| `%T` | 인수의 **유형**을 출력하는 데 사용된다. |
-| `%%` | `%` sign을 출력한다. |
+| `%T`  | 인수의 **유형**을 출력하는 데 사용된다.          |
+| `%%`  | `%` sign을 출력한다.                             |
 
 ```Go
 package main
@@ -375,16 +377,18 @@ func main() {
   fmt.Printf("%T\n", txt)
 }
 ```
+
 > 15.5<br>
-15.5<br>
-15.5%<br>
-float64<br>
-Hello World!<br>
-"Hello World!"<br>
-string<br>
+> 15.5<br>
+> 15.5%<br>
+> float64<br>
+> Hello World!<br>
+> "Hello World!"<br>
+> string<br>
 
 ### Integer Formatting Verbs
 
 | Verb | Description |
-| :---- | :---- |
+| :--- | :---------- |
+
 | %b
