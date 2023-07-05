@@ -1,18 +1,9 @@
-<!-- ---
+---
 title: "About Me"
-date: 2023-05-21
 excerpt: "About Me"
 toc: true
 toc_sticky: true
-header:
-  teaser: /assets/images/증명사진.jpg
-
 permalink: /about-me/
-# categories:
-#   - About Me
-# tags:
-#   - About Me
-last_modified_at: 2023-05-31
 ---
 
 # Personal Homepage
@@ -26,6 +17,11 @@ last_modified_at: 2023-05-31
 &nbsp;
 현재 성균관대학교 수학과와 소프트웨어학과를 복수전공하고 있는 5학기 재학생 김지훈입니다. 수학 전공을 통해 얻은 문제 해결 능력과 추상적인 사고력은 업무 분석과 최적화에 큰 도움이 될 것이며, 소프트웨어학과 전공을 통해 얻은 프로그래밍, 알고리즘, 컴퓨터 구조에 대한 지식은 직접적인 구현에 도움이 될 것입니다.
 
+<!-- &nbsp;
+이번 학기 수강중인 박진영 교수님의 오픈소스소프트웨어실습 수업 중 ChatGPT에 대한 내용을 듣게 된 기회가 있었습니다. 자연어처리(NLP)를 하여 감정 분석, 챗봇, 텍스트 요약 등에 응용하는 것을 보고 NLP의 중요성에 대해 깨닫게 되고, 정말 깊게 배우고 싶다는 생각을 하게 되었습니다.
+
+&nbsp;
+과학계산과 딥러닝 수업에서 CNN을 이용하여 이미지 처리, 학부연구생에서 GNN을 이용한 그래프 데이터 처리 등을 배워보았습니다. 실제적으로 이 개념들이 실무에서 어떻게 사용이 되고, 자연어처리에서 sequence 데이터 처리에 주로 사용되는 RNN에 대해서도 경험을 통해 학습해보고 싶습니다. -->
 
 - **열정**
 
@@ -97,6 +93,7 @@ NP-Hard, NP-Complement와 같이 주어진 문제가 polynomial time으로 optim
 - **C언어** : pointer, structure 등을 다룰 수 있습니다. 또한, 위에서 언급한 자료구조 및 알고리즘을 능숙하게 활용할 수 있습니다.
 
 - **Python** : class, dictionary 등 다양한 자료구조를 다룰 수 있습니다. 또한, 위에서 언급한 자료구조 및 알고리즘을 능숙하게 사용할 수 있습니다.
+<!-- 더불어 Pytorch 라이브러리를 사용하여 CNN이나 GNN과 같은 인공 신경망을 구현할 수도 있습니다. -->
 
 - **JAVA** : class, method, extend, implement, Override, GUI, Thread 등 다양한 개념과 기능들을 활용할 수 있습니다.
 
@@ -106,7 +103,7 @@ NP-Hard, NP-Complement와 같이 주어진 문제가 polynomial time으로 optim
 
 GitHub address : [JihunSKKU GitHub](https://github.com/JihunSKKU "GitHub Homepage")
 
-GitHub Blog address : [JihunSKKU Blog](https://JihunSKKU.github.io)
+<!-- GitHub Blog address : [JihunSKKU Blog](https://JihunSKKU.github.io) -->
 
 <br>
 
@@ -187,4 +184,4 @@ Python을 사용하여 수치적분 알고리즘인 Forward Euler, Backward Eule
 | ---------------: | :----------------------------- |
 |        **Email** | <kjh31021@g.skku.edu>          |
 |       **GitHub** | <https://github.com/JihunSKKU> |
-| **Phone Number** | 010-3553-0180                  | -->
+| **Phone Number** | 010-3553-0180                  |
