@@ -1,7 +1,7 @@
 ---
-title: "Go Tutorial"
+title: "Go Tutorial 1"
 date: 2023-07-05
-excerpt: "Go에 대해서 배워보자"
+excerpt: "Go에 대해서 배워보자 1"
 toc: true
 toc_sticky: true
 header:
@@ -18,7 +18,7 @@ last_modified_at: 2023-07-05
 
 Go는 구글에서 발명된 언어로 컴파일 언어라는 특징을 가지고 있다. 그래서 컴파일러의 컴파일 속도가 매우 빨라 인터프리터 언어처럼 사용할 수 있다.
 
-- 인터프리터 : 코드를 한 줄씩 읽어 내려가며 실행하는 프로그램. Ex) MATLAB, Python
+- 인터프리터 : 코드를 한 줄씩 읽어 내려가며 실행하는 프로그램. MATLAB, Python 등이 있다.
 
 자료형 체계에 있어 정적 타입(static type) 검사가 이루어지기 때문에 Python과 조금 다르다. 문법은 C++과 유사하다.
 
@@ -282,7 +282,7 @@ func main() {
 ```
 > HelloWorld
 
-줄바꿈을 하기 위해서는 `\n`을 사용해야 합니다.
+줄바꿈을 하기 위해서는 `\n`을 사용해야 한다.
 
 ```Go
 package main
@@ -297,7 +297,7 @@ func main() {
 ```
 > Hello<br>World<br>
 
-여러 변수를 하나의 함수에서 print하는 것도 가능합니다.
+여러 변수를 하나의 함수에서 print하는 것도 가능하다.
 
 ```Go
 package main
@@ -311,7 +311,7 @@ func main() {
 ```
 > Hello<br>World<br>
 
-**둘 다 문자열이 아닌** 경우 인수 사이에 공백을 삽입합니다.
+**둘 다 문자열이 아닌** 경우 인수 사이에 공백을 삽입한다.
 
 ```Go
 package main
@@ -327,4 +327,64 @@ func main() {
 > 10 20
 
 
+## Println() Function
 
+`Print()`함수와 달리 인수 사이에 공백이 추가되고 끝에 줄 바꿈이 추가된다.
+
+```Go
+package main
+import ("fmt")
+
+func main() {
+  var i,j string = "Hello","World"
+
+  fmt.Println(i,j)
+}
+```
+
+> Hello World
+
+## Printf() Function
+
+주어진 서식 동사를 기반으로 인수의 서식을 지정한 다음 print한다. (C++의 printf와 유사하다고 보면 된다.)
+
+### General Formatting Verbs
+
+| Verb | Description |
+| :---- | :---- |
+| `%v` | 인수의 **값**을 출력하는 데 사용된다. |
+| `%#v` | 위와 동일, 그러나 Go-syntax format으로 출력된다. |
+| `%T` | 인수의 **유형**을 출력하는 데 사용된다. |
+| `%%` | `%` sign을 출력한다. |
+
+```Go
+package main
+import ("fmt")
+
+func main() {
+  var i = 15.5
+  var txt = "Hello World!"
+
+  fmt.Printf("%v\n", i)
+  fmt.Printf("%#v\n", i)
+  fmt.Printf("%v%%\n", i)
+  fmt.Printf("%T\n", i)
+
+  fmt.Printf("%v\n", txt)
+  fmt.Printf("%#v\n", txt)
+  fmt.Printf("%T\n", txt)
+}
+```
+> 15.5<br>
+15.5<br>
+15.5%<br>
+float64<br>
+Hello World!<br>
+"Hello World!"<br>
+string<br>
+
+### Integer Formatting Verbs
+
+| Verb | Description |
+| :---- | :---- |
+| %b
