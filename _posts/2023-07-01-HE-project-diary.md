@@ -115,7 +115,7 @@ $$ReLU(x) = max(0, x) = \frac{x + |x|}{2}$$
 - GitHub repository 생성 및 공유
 - 정보보호 서약 서명
 
-
+### [EVA paper review](https://jihunskku.github.io/%ED%95%99%EB%B6%80%EC%97%B0%EA%B5%AC%EC%83%9D/EVA-An-Encrypted-Vector-Arithmetic-Language-and-Compiler-for-Efficient-Homomorphic-Computation/)
 
 ## 차후 해야할 일
 
