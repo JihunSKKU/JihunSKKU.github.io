@@ -1,7 +1,7 @@
 ---
-title: "Go Tutorial 1"
+title: "Go Tutorial"
 date: 2023-07-05
-excerpt: "Go에 대해서 배워보자 1"
+excerpt: "Go에 대해서 배워보자"
 toc: true
 toc_sticky: true
 header:
