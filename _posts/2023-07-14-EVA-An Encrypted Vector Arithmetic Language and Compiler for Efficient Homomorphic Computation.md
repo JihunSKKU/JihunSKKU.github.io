@@ -4,6 +4,8 @@ date: 2023-07-14
 excerpt: "Homomorphic Computation paper (CKKS)"
 toc: true
 toc_sticky: true
+use_math: true
+
 header:
   teaser: /assets/images/encryption.jpg
 

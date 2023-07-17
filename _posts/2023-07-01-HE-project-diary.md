@@ -4,6 +4,8 @@ date: 2023-07-01
 excerpt: "동형암호 과제 진행사항 기록장"
 toc: true
 toc_sticky: true
+use_math: true
+
 header:
   teaser: /assets/images/encryption.jpg
 
