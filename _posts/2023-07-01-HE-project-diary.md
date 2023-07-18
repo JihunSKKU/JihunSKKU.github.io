@@ -122,8 +122,25 @@ $$ReLU(x) = max(0, x) = \frac{x + |x|}{2}$$
 ## 차후 해야할 일
 
 - HELayer, TenSEAL, PyCrCNN 사용해보기
-    - HELayers : 개발과제에서 벤치마킹 대상
-    - TenSEAL, PyCrCNN : IEEE ACCESS에서 비교대상
+  - HELayers : 개발과제에서 벤치마킹 대상
+  - TenSEAL, PyCrCNN : IEEE ACCESS에서 비교대상
+
+## 07/17
+
+- 필요한 대수2 내용 공부
+  - Ideal
+  - Extension field
+  - Cyclotomic polynomial
+
+- RNS 공부
+  - 각 parameter들의 의미
+  - RNS representation 및 장점
+  - NTT(Number Theoretic Transform) 방법 및 예제
+
+
+## 07/18
+
+- bfv의 각 function 및 parameter에 대한 코드 분석 [링크]()
 
 
 ## 07/24
