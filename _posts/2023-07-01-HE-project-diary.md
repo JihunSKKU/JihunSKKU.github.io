@@ -112,7 +112,7 @@ quotient field ($Q$)에서 $1$의 거듭제곱근을 첨가하여 얻은 field�
 
 ### ReLU 함수 고안
 
-$$ReLU(x) = max(0, x) = \frac{x + |x|}{2}$$  
+$ ReLU(x) = max(0, x) = \frac{x + |x|}{2} $  
 여기서 $|x|$를 addition과 multiplication으로 나타낼 수만 있다면..?  
 그런데 이는 비선형 함수라서 애초에 두 operation으로 나타내기가 어려울 것 같다는 결론.
 
