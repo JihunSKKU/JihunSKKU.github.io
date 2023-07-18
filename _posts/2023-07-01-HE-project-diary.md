@@ -48,6 +48,8 @@ $E(m_1) \times E(m_2) = E(m_1 \times m_2)$
 - 공개키 암호화 방식 &Rightarrow; 암호화, 복호화 키가 서로 다름
     - 키분배가 필요없다, 기밀성 / 인증 / 부인방지 기능 등을 제공한다.
     - 대칭키 암호화 방식에 비해 속도가 느리다.
+
+- [자세한 정보 링크](https://jihunskku.github.io/%ED%95%99%EB%B6%80%EC%97%B0%EA%B5%AC%EC%83%9D/homomorphic-encryption/)
     
 ### RSA 암호
 
@@ -61,6 +63,9 @@ $E(m_1) \times E(m_2) = E(m_1 \times m_2)$
 - server ID 전달 및 PW 변경
 - server에 GO 환경 구축
 
+## 07/05
+
+- Go 언어 기초 공부 [링크](https://jihunskku.github.io/%ED%95%99%EB%B6%80%EC%97%B0%EA%B5%AC%EC%83%9D/Go-Tutorial/)
 
 ## 07/06
 
