@@ -1,7 +1,7 @@
 ---
-title: "Go Tutorial 1"
+title: "Go Tutorial"
 date: 2023-07-05
-excerpt: "Go에 대해서 배워보자 1"
+excerpt: "Go에 대해서 배워보자"
 toc: true
 toc_sticky: true
 header:
@@ -416,3 +416,109 @@ string
 | %4d  | Pad with spaces (width 4, right justified) |
 | %-4d | Pad with spaces (width 4, left justified)  |
 | %04d | Pad with zeroes (width 4)                  |
+
+```go
+package main
+import ("fmt")
+
+func main() {
+  var i = 15
+ 
+  fmt.Printf("%b\n", i)
+  fmt.Printf("%d\n", i)
+  fmt.Printf("%+d\n", i)
+  fmt.Printf("%o\n", i)
+  fmt.Printf("%O\n", i)
+  fmt.Printf("%x\n", i)
+  fmt.Printf("%X\n", i)
+  fmt.Printf("%#x\n", i)
+  fmt.Printf("%4d\n", i)
+  fmt.Printf("%-4d\n", i)
+  fmt.Printf("%04d\n", i)
+}
+```
+
+<pre style="background-color: #000; color: #fff; padding: 1rem; font-size: 14px;">
+1111
+15
++15
+17
+0o17
+f
+F
+0xf
+  15
+15
+0015
+</pre>
+
+#### String Formatting Verbs
+
+| Verb | Description |
+| :---- | :------- |
+| %s | Prints the value as plain string |
+| %q | Prints the value as a double-quoted string |
+| %8s | Prints the value as plain string (width 8, right justified) |
+| %-8s | Prints the value as plain string (width 8, left justified) |
+| %x | Prints the value as hex dump of byte values |
+| % x | Prints the value as hex dump with spaces |
+
+```go
+package main
+import ("fmt")
+
+func main() {
+  var txt = "Hello"
+ 
+  fmt.Printf("%s\n", txt)
+  fmt.Printf("%q\n", txt)
+  fmt.Printf("%8s\n", txt)
+  fmt.Printf("%-8s\n", txt)
+  fmt.Printf("%x\n", txt)
+  fmt.Printf("% x\n", txt)
+}
+```
+
+<pre style="background-color: #000; color: #fff; padding: 1rem; font-size: 14px;">
+Hello
+"Hello"
+   Hello
+Hello
+48656c6c6f
+48 65 6c 6c 6f
+</pre>
+
+#### Bool Formatting Verbs
+
+| Verb | Description |
+| :---- | :------- |
+| %t | Value of the boolean operator in true or false format (same as using %v) |
+
+```go
+package main
+import ("fmt")
+
+func main() {
+  var i = true
+  var j = false
+
+  fmt.Printf("%t\n", i)
+  fmt.Printf("%t\n", j)
+}
+```
+
+<pre style="background-color: #000; color: #fff; padding: 1rem; font-size: 14px;">
+true
+false
+</pre>
+
+
+#### Float Formatting Verbs
+
+| Verb | Description |
+| :---- | :------- |
+| %e | Scientific notation with 'e' as exponent |
+| %f | Decimal point, no exponent |
+| %.2f | Default width, precision 2 |
+| %6.2f | Width 6, precision 2 |
+| %g | Exponent as needed, only necessary digits |

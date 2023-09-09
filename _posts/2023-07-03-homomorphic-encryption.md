@@ -10,7 +10,7 @@ header:
 categories:
   - 학부연구생
 tags:
-  - homomorphic-encryption
+  - homomorphic encryption
 last_modified_at: 2023-07-03
 ---
 
