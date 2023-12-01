@@ -254,3 +254,7 @@ encoder.sigma(p_mult)
 ```
 array([  1.+7.216e-16j,  -4.+8.327e-16j,   9.-5.274e-15j, -16.-2.609e-15j])
 ```
+
+## Reference
+
+https://blog.openmined.org/ckks-explained-part-1-simple-encoding-and-decoding/
