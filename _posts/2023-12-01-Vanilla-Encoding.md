@@ -1,6 +1,6 @@
 ---
 title: "Vanilla Encoding"
-date: 2023-12-02
+date: 2023-12-01
 excerpt: "CKKS Encoding을 이해하기 위한 encoding 방법"
 toc: true
 toc_sticky: true
@@ -15,7 +15,7 @@ tags:
   - homomorphic encryption
   - Python
 
-last_modified_at: 2023-12-02
+last_modified_at: 2023-12-01
 ---
 
 # Vanilla Encoding example
