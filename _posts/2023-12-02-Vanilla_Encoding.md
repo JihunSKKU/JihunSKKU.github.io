@@ -15,7 +15,7 @@ tags:
   - homomorphic encryption
   - Python
 
-last_modified_at: 2023-07-18
+last_modified_at: 2023-12-02
 ---
 
 # Vanilla Encoding example
